@@ -82,18 +82,26 @@
 
       console.log(comment);
 
+
+
       // Array.prototype.findIndex()
       // Find the comment with this ID
       // delete the comment with the ID of 823423
 
       const index = comments.findIndex(comment => comment.id === 823423);
       console.log(`%c ${index}  `,
-        'background: black; padding: 5px; padding-right: 20px; color: #66ff99; font-size: 1.5em;');
+        'background: black; padding: 5px; padding-right: 20px; text-shadow: 2px 1px #ff0000, -2px -1px blue; color: #66ff99; font-size: 2em; font-weight: 900;'
+      );
+
+
+
 
       const newComments = [
         ...comments.slice(0, index),
         ...comments.slice(index + 1)
       ];
+
+      console.log(newComments);
 
     </script>
   </body>
