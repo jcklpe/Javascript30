@@ -19,7 +19,8 @@
         age: 8
       }];
 
-      function makeGreen() {
+      function makeGreen()
+      {
         const p = document.querySelector('p');
         p.style.color = '#BADA55';
         p.style.fontSize = '50px';
@@ -72,15 +73,18 @@
 
       console.groupCollapsed(`${dog.name}`);
 
-      console.dogs.forEach(dog => {
+      console.dogs.forEach(dog =>
+      {
         console.log(`This is ${dog.name}`);
       });
 
-      console.dogs.forEach(dog => {
-        console.og(`${dog.name} is ${dog.age} years old`);
+      console.dogs.forEach(dog =>
+      {
+        console.log(`${dog.name} is ${dog.age} years old`);
       });
 
-      console.dogs.forEach(dog => {
+      console.dogs.forEach(dog =>
+      {
         console.og(`${dog.name} is ${dog.age * 7} dog years old`);
       });
 
@@ -104,7 +108,8 @@
       console.time('fetching data');
       fetch('https//api.github.com/users/wesbos')
         .then(data => data.json())
-        .then(data => {
+        .then(data =>
+        {
           console.timeEnd('fetching data');
           console.log(data);
         });
