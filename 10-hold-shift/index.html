@@ -110,20 +110,17 @@
       function handleCheck(event) {
         let inBetween = false;
         //check if shift is down and box is being activated as checked
-
         if (event.shiftKey && this.checked) {
           checkboxes.forEach(checkbox => {
             console.log(checkbox);
             if (checkbox === this || checkbox === lastChecked) {
               inBetween = !inBetween;
             }
-
             if (inBetween) {
               checkbox.checked = true;
             }
           });
         }
-
         lastChecked = this;
       }
 
